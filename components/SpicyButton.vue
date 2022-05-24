@@ -1,5 +1,5 @@
 <template>
-    <a @click="onClick" class="spicy-button">{{ text }}</a>
+    <a class="spicy-button">{{ text }}</a>
 </template>
 
 <script>
