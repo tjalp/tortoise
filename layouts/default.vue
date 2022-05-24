@@ -10,6 +10,7 @@
                     <li><NuxtLink to="/about"><SpicyButton text="/about" /></NuxtLink></li>
                     <li><NuxtLink to="/downloads"><SpicyButton text="/downloads" /></NuxtLink></li>
                     <li><NuxtLink to="/admin"><SpicyButton text="/admin" /></NuxtLink></li>
+                    <li><NuxtLink to="/auth"><SpicyButton text="/auth" /></NuxtLink></li>
                     <li><NuxtLink to="/404"><SpicyButton text="/404...?" /></NuxtLink></li>
                 </ul>
             </nav>
