@@ -8,7 +8,12 @@
 </template>
 
 <script>
+import { setTitle } from '@/middleware/app'
+
 export default {
-    props: ['error']
+    props: ['error'],
+    mounted() {
+        setTitle('error ' + this.error.statusCode);
+    }
 }
 </script>

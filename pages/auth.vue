@@ -13,7 +13,8 @@
 
 <script>
 import { app } from '@/middleware/firebase'
-import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signInWithRedirect } from 'firebase/auth'
+import { setTitle } from '@/middleware/app'
+import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithRedirect } from 'firebase/auth'
 
 const auth = getAuth(app);
 
@@ -40,8 +41,12 @@ export default {
             });
         },
         currentUser() {
+            if (auth.currentUser == null) return "???";
             return auth.currentUser;
         }
+    },
+    mounted() {
+        setTitle('auth');
     }
 }
 </script>

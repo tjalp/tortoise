@@ -5,3 +5,13 @@
     <p>still haven't left?</p>
   </div>
 </template>
+
+<script>
+import { setTitle } from '@/middleware/app'
+
+export default {
+  mounted() {
+    setTitle();
+  }
+}
+</script>

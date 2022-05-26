@@ -9,6 +9,16 @@
   </div>
 </template>
 
+<script>
+import { setTitle } from '@/middleware/app'
+
+export default {
+  mounted() {
+    setTitle('downloads');
+  }
+}
+</script>
+
 <style scoped>
 p {
   font-size: 2rem;
