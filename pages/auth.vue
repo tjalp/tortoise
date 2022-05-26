@@ -13,24 +13,24 @@
 
 <script>
 import { app } from '@/middleware/firebase'
-import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signInWithRedirect } from 'firebase/auth'
 
 const auth = getAuth(app);
 
-export default({
+export default {
     data() {
+
+        onAuthStateChanged(auth, () => {
+            this.authenticated = auth.currentUser !== null;
+        });
+
         return {
-            authenticated: auth.currentUser !== null,
+            authenticated: auth.currentUser !== null
         }
     },
     methods: {
         authenticate() {
-            signInWithPopup(auth, new GoogleAuthProvider())
-                .then(() => {
-                    this.authenticated = true;
-                }).catch((error) => {
-                    console.error(error);
-                });
+            signInWithRedirect(auth, new GoogleAuthProvider());
         },
         logout() {
             auth.signOut().then(() => {
@@ -43,5 +43,5 @@ export default({
             return auth.currentUser;
         }
     }
-})
+}
 </script>
