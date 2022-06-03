@@ -9,6 +9,7 @@
                     <li><NuxtLink to="/"><SpicyButton text="/home" /></NuxtLink></li>
                     <li><NuxtLink to="/about"><SpicyButton text="/about" /></NuxtLink></li>
                     <li><NuxtLink to="/downloads"><SpicyButton text="/downloads" /></NuxtLink></li>
+                    <li><NuxtLink to="/map"><SpicyButton text="/map" /></NuxtLink></li>
                     <li><NuxtLink to="/dashboard"><SpicyButton text="/dashboard" /></NuxtLink></li>
                     <li><NuxtLink to="/auth"><SpicyButton text="/auth" /></NuxtLink></li>
                     <li><NuxtLink to="/404"><SpicyButton text="/404...?" /></NuxtLink></li>
@@ -58,11 +59,9 @@ nav ul {
 }
 
 nav li {
-  margin: 0 0.5rem;
-  font-size: 1.6rem;
+  margin: 0 0.4rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  background-color: #303030;
-  border-radius: 5px;
 }
 
 nav a.nuxt-link-exact-active {
