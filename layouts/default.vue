@@ -23,8 +23,6 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-
 body {
     font-family: 'Rubik', sans-serif;
     background-color: #202020;
