@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Map</h1>
+    <h1>🗺️Map</h1>
     <h2 class="undertitle">you can view the current minecraft server map here</h2>
     <h2>
       to view the full-screen version of this map, please visit
