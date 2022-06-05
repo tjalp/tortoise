@@ -12,7 +12,6 @@
                     <li><NuxtLink to="/map"><SpicyButton text="/map" /></NuxtLink></li>
                     <li><NuxtLink to="/dashboard"><SpicyButton text="/dashboard" /></NuxtLink></li>
                     <li><NuxtLink to="/auth"><SpicyButton text="/auth" /></NuxtLink></li>
-                    <li><NuxtLink to="/404"><SpicyButton text="/404...?" /></NuxtLink></li>
                 </ul>
             </nav>
             <div style="flex: 1"></div>
